@@ -1,0 +1,4 @@
+test $5$rounds=535000$s6AQwVSZ25yI/rEk$rH8kphU/yk6AaebxCWakUIHIAq/6k3UPekZf9kCWK39 13.51
+dummy $5$rounds=535000$uKIX9EHoW14j5Idq$SGO9HJyXMgQ3rioFb/RJf4tweoMrGjQyajHLDqhO3m9 6570.67
+test1 $5$rounds=535000$vbRRK6a34EqfvPfB$ED/AIHeoJaaeyXkhzkWDyo0smo6T0joRuqXTd98Qh5B 0
+happy $5$rounds=535000$XlGu.lnTcz7ewqPw$LaEv5rrWweEqyLUFnYmWIf2HkN421m70bnf7BB5pYv6 0

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	<!-- Get css style and declare title -->
+	<head>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+		<title>Update Password</title>
+	</head>
+<body>
+
+	<!-- Display flashed messages -->
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for message in messages %}
+				{{message}}<br>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+	
+	<!-- Lock page behind login -->
+	{% if LOGGED_IN %}
+
+		<h1>Update Password</h1>
+		<form method=post>
+			<div>
+				<label for="password">New Password:</label><br>
+				<input type="password" id="password" name="password"\
+				placeholder="Enter Password" required value = "{{request.form.password}}"><br>
+				
+			</div><div>
+				<label for="confirm">Confirm New Password:</label><br>
+				<input type="password" id="confirm" name="confirm"\
+				placeholder="Confirm Password" required value = "{{request.form.confirm}}"><br>
+				<input type="submit" value="Reset Password">
+			</div>
+
+
+			
+		</form>
+	
+	{% else %}
+		You must be logged in to view this page.<br>
+		<a href="/register">Register</a>
+		<a href="/login"> Login</a>
+	{% endif %}
+	
+<body>
+<html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+	<title>Welcome to Online Bank</title>
+	
+	<!-- Display flashed messages -->
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for message in messages %}
+				{{message}}<br>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+
+	<div class="container">
+
+	<h1>Welcome to the CMSC Online Bank</h1>
+
+	<h2>Where You Are A Valued Customer</h2>
+
+	<h4>Date: {{cur_date}}</h4>
+
+	<h3> <a href="login"> 
+		<button class="btn1">Login</button> 
+		</a> 
+	</h3>
+	
+	<h3> <a href="register"> 
+		<button class="btn2">Register</button>
+		</a> 
+	</h3>
+
+	<h3> <a href="hello"> 
+		<button class="btn3">Hello</button> 
+		</a> 
+	</h3>
+
+	<h3> <a href="home"> 
+		<button class="btn4">Home</button> 
+		</a> 
+	</h3>
+
+	<h3> <a href="update"> 
+		<button class="btn5">Update</button> 
+		</a> 
+	</h3>
+
+	</div>
+
+</html>
